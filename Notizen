@@ -1,0 +1,611 @@
+grep js[rl] tracerWormland.log | sort | cut -d " " -f 1 | uniq -c | sort
+
+
+Soundbase XX Titel und Intro
+	0 Intro "Short Cuts"
+	1 Title
+
+Soundbase Level 1-1
+
+
+Spielt den Titelsong. Das ist sicher!
+09d6be 04d6be bne $d6bb     [09d6bb] A:0b59 X:0001 Y:0000 S:02ea D:0b08 B:00 nvMXdIZC
+09d6c0 04d6c0 inc                    A:0b59 X:0001 Y:0000 S:02ea D:0b08 B:00 nvMXdIZC
+09d6c1 04d6c1 stx $2141     [002141] A:0b5a X:0001 Y:0000 S:02ea D:0b08 B:00 nvMXdIzC SPC Write 1 <= 01 Definitiv die Songnummer!
+09d6c4 04d6c4 sty $2142     [002142] A:0b5a X:0001 Y:0000 S:02ea D:0b08 B:00 nvMXdIzC SPC Write 2 <= 00
+09d6c7 04d6c7 plx                    A:0b5a X:0001 Y:0000 S:02ea D:0b08 B:00 nvMXdIzC
+09d6c8 04d6c8 stx $2140     [002140] A:0b5a X:0010 Y:0000 S:02eb D:0b08 B:00 nvMXdIzC SPC Write 0 <= 10
+09d6cb 04d6cb sta $2143     [002143] A:0b5a X:0010 Y:0000 S:02eb D:0b08 B:00 nvMXdIzC SPC Write 3 <= b5a
+09d6ce 04d6ce sta $04       [000b0c] A:0b5a X:0010 Y:0000 S:02eb D:0b08 B:00 nvMXdIzC
+
+
+//Spielt den Titelsong im SoundTest
+09d294 04d294 pld                    A:1ba8 X:008b Y:0009 S:02ef D:0b08 B:00 nvmXdIzC
+09d295 04d295 plb                    A:1ba8 X:008b Y:0009 S:02f1 D:1000 B:00 nvmXdIzC
+09d296 04d296 rtl                    A:1ba8 X:008b Y:0009 S:02f2 D:1000 B:bf NvmXdIzC
+bfad4d 1fad4d rep #$30               A:1ba8 X:008b Y:0009 S:02f5 D:1000 B:bf NvmXdIzC
+bfad4f 1fad4f lda #$0001             A:1ba8 X:008b Y:0009 S:02f5 D:1000 B:bf NvmxdIzC
+bfad52 1fad52 trb $13ee     [bf13ee] A:0001 X:008b Y:0009 S:02f5 D:1000 B:bf nvmxdIzC
+bfad55 1fad55 bne $ad11     [bfad11] A:0001 X:008b Y:0009 S:02f5 D:1000 B:bf nvmxdIZC
+bfad57 1fad57 lda #$8000             A:0001 X:008b Y:0009 S:02f5 D:1000 B:bf nvmxdIZC
+bfad5a 1fad5a trb $13ee     [bf13ee] A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvmxdIzC
+bfad5d 1fad5d beq $ad67     [bfad67] A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvmxdIZC
+bfad67 1fad67 sep #$30               A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvmxdIZC
+bfad69 1fad69 lda $13ed     [bf13ed] A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvMXdIZC
+bfad6c 1fad6c jsl $09d009   [09d009] A:8001 X:008b Y:0009 S:02f5 D:1000 B:bf nvMXdIzC
+09d009 04d009 jmp $d3dd     [09d3dd] A:8001 X:008b Y:0009 S:02f2 D:1000 B:bf nvMXdIzC
+09d3dd 04d3dd phb                    A:8001 X:008b Y:0009 S:02f2 D:1000 B:bf nvMXdIzC
+09d3de 04d3de phd                    A:8001 X:008b Y:0009 S:02f1 D:1000 B:bf nvMXdIzC
+09d3df 04d3df php                    A:8001 X:008b Y:0009 S:02ef D:1000 B:bf nvMXdIzC
+09d3e0 04d3e0 sep #$20               A:8001 X:008b Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d3e2 04d3e2 tax                    A:8001 X:008b Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d3e3 04d3e3 lda #$10               A:8001 X:0001 Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d3e5 04d3e5 jsr $d6a6     [09d6a6] A:8010 X:0001 Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d6a6 04d6a6 php                    A:8010 X:0001 Y:0009 S:02ec D:1000 B:bf nvMXdIzC
+09d6a7 04d6a7 phb                    A:8010 X:0001 Y:0009 S:02eb D:1000 B:bf nvMXdIzC
+09d6a8 04d6a8 phd                    A:8010 X:0001 Y:0009 S:02ea D:1000 B:bf nvMXdIzC
+09d6a9 04d6a9 sep #$30               A:8010 X:0001 Y:0009 S:02e8 D:1000 B:bf nvMXdIzC
+09d6ab 04d6ab pha                    A:8010 X:0001 Y:0009 S:02e8 D:1000 B:bf nvMXdIzC
+09d6ac 04d6ac rep #$20               A:8010 X:0001 Y:0009 S:02e7 D:1000 B:bf nvMXdIzC
+09d6ae 04d6ae lda $001ffe   [001ffe] A:8010 X:0001 Y:0009 S:02e7 D:1000 B:bf nvmXdIzC
+09d6b2 04d6b2 tcd                    A:0b08 X:0001 Y:0009 S:02e7 D:1000 B:bf nvmXdIzC
+09d6b3 04d6b3 sep #$20               A:0b08 X:0001 Y:0009 S:02e7 D:0b08 B:bf nvmXdIzC
+09d6b5 04d6b5 lda #$00               A:0b08 X:0001 Y:0009 S:02e7 D:0b08 B:bf nvMXdIzC
+09d6b7 04d6b7 pha                    A:0b00 X:0001 Y:0009 S:02e7 D:0b08 B:bf nvMXdIZC
+09d6b8 04d6b8 plb                    A:0b00 X:0001 Y:0009 S:02e6 D:0b08 B:bf nvMXdIZC
+09d6b9 04d6b9 lda $04       [000b0c] A:0b00 X:0001 Y:0009 S:02e7 D:0b08 B:00 nvMXdIZC
+09d6bb 04d6bb cmp $2143     [002143] A:0b98 X:0001 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC
+09d6be 04d6be bne $d6bb     [09d6bb] A:0b98 X:0001 Y:0009 S:02e7 D:0b08 B:00 nvMXdIZC
+09d6c0 04d6c0 inc                    A:0b98 X:0001 Y:0009 S:02e7 D:0b08 B:00 nvMXdIZC
+09d6c1 04d6c1 stx $2141     [002141] A:0b99 X:0001 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC SPC Write 1 <= 01
+09d6c4 04d6c4 sty $2142     [002142] A:0b99 X:0001 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC SPC Write 2 <= 09
+09d6c7 04d6c7 plx                    A:0b99 X:0001 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC
+09d6c8 04d6c8 stx $2140     [002140] A:0b99 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 10
+09d6cb 04d6cb sta $2143     [002143] A:0b99 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC SPC Write 3 <= b99
+09d6ce 04d6ce sta $04       [000b0c] A:0b99 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC
+09d6d0 04d6d0 pld                    A:0b99 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC
+09d6d1 04d6d1 plb                    A:0b99 X:0010 Y:0009 S:02ea D:1000 B:00 nvMXdIzC
+09d6d2 04d6d2 plp                    A:0b99 X:0010 Y:0009 S:02eb D:1000 B:bf NvMXdIzC
+09d6d3 04d6d3 rts                    A:0b99 X:0010 Y:0009 S:02ec D:1000 B:bf nvMXdIzC
+09d3e8 04d3e8 plp                    A:0b99 X:0010 Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d3e9 04d3e9 pld                    A:0b99 X:0010 Y:0009 S:02ef D:1000 B:bf nvMXdIzC
+09d3ea 04d3ea plb                    A:0b99 X:0010 Y:0009 S:02f1 D:1000 B:bf nvMXdIzC
+09d3eb 04d3eb rtl                    A:0b99 X:0010 Y:0009 S:02f2 D:1000 B:bf NvMXdIzC
+bfad70 1fad70 rep #$30               A:0b99 X:0010 Y:0009 S:02f5 D:1000 B:bf NvMXdIzC
+
+
+
+
+//Spielt vermutlich den Introsong "Short Cuts", weil gleiche Adresse
+09d28c 04d28c rep #$20               A:b9ea X:008b Y:0009 S:02e9 D:0b08 B:00 nvMXdIzc
+09d28e 04d28e clc                    A:b9ea X:008b Y:0009 S:02e9 D:0b08 B:00 nvmXdIzc
+09d28f 04d28f lda #$ffc0             A:b9ea X:008b Y:0009 S:02e9 D:0b08 B:00 nvmXdIzc
+09d292 04d292 sbc $0e       [000b16] A:ffc0 X:008b Y:0009 S:02e9 D:0b08 B:00 NvmXdIzc
+09d294 04d294 pld                    A:1ba8 X:008b Y:0009 S:02e9 D:0b08 B:00 nvmXdIzC
+09d295 04d295 plb                    A:1ba8 X:008b Y:0009 S:02eb D:1000 B:00 nvmXdIzC
+09d296 04d296 rtl                    A:1ba8 X:008b Y:0009 S:02ec D:1000 B:bf NvmXdIzC
+bfd3aa 1fd3aa rep #$30               A:1ba8 X:008b Y:0009 S:02ef D:1000 B:bf NvmXdIzC
+bfd3ac 1fd3ac plx                    A:1ba8 X:008b Y:0009 S:02ef D:1000 B:bf NvmxdIzC
+bfd3ad 1fd3ad phx                    A:1ba8 X:d4b5 Y:0009 S:02f1 D:1000 B:bf NvmxdIzC
+bfd3ae 1fd3ae lda $000a,x   [bfd4bf] A:1ba8 X:d4b5 Y:0009 S:02ef D:1000 B:bf NvmxdIzC
+bfd3b1 1fd3b1 jsl $09d009   [09d009] A:0000 X:d4b5 Y:0009 S:02ef D:1000 B:bf nvmxdIZC
+09d009 04d009 jmp $d3dd     [09d3dd] A:0000 X:d4b5 Y:0009 S:02ec D:1000 B:bf nvmxdIZC
+09d3dd 04d3dd phb                    A:0000 X:d4b5 Y:0009 S:02ec D:1000 B:bf nvmxdIZC
+09d3de 04d3de phd                    A:0000 X:d4b5 Y:0009 S:02eb D:1000 B:bf nvmxdIZC
+09d3df 04d3df php                    A:0000 X:d4b5 Y:0009 S:02e9 D:1000 B:bf nvmxdIZC
+09d3e0 04d3e0 sep #$20               A:0000 X:d4b5 Y:0009 S:02e8 D:1000 B:bf nvmxdIZC
+09d3e2 04d3e2 tax                    A:0000 X:d4b5 Y:0009 S:02e8 D:1000 B:bf nvMxdIZC
+09d3e3 04d3e3 lda #$10               A:0000 X:0000 Y:0009 S:02e8 D:1000 B:bf nvMxdIZC
+09d3e5 04d3e5 jsr $d6a6     [09d6a6] A:0010 X:0000 Y:0009 S:02e8 D:1000 B:bf nvMxdIzC
+09d6a6 04d6a6 php                    A:0010 X:0000 Y:0009 S:02e6 D:1000 B:bf nvMxdIzC
+09d6a7 04d6a7 phb                    A:0010 X:0000 Y:0009 S:02e5 D:1000 B:bf nvMxdIzC
+09d6a8 04d6a8 phd                    A:0010 X:0000 Y:0009 S:02e4 D:1000 B:bf nvMxdIzC
+09d6a9 04d6a9 sep #$30               A:0010 X:0000 Y:0009 S:02e2 D:1000 B:bf nvMxdIzC
+09d6ab 04d6ab pha                    A:0010 X:0000 Y:0009 S:02e2 D:1000 B:bf nvMXdIzC
+09d6ac 04d6ac rep #$20               A:0010 X:0000 Y:0009 S:02e1 D:1000 B:bf nvMXdIzC
+09d6ae 04d6ae lda $001ffe   [001ffe] A:0010 X:0000 Y:0009 S:02e1 D:1000 B:bf nvmXdIzC
+09d6b2 04d6b2 tcd                    A:0b08 X:0000 Y:0009 S:02e1 D:1000 B:bf nvmXdIzC
+09d6b3 04d6b3 sep #$20               A:0b08 X:0000 Y:0009 S:02e1 D:0b08 B:bf nvmXdIzC
+09d6b5 04d6b5 lda #$00               A:0b08 X:0000 Y:0009 S:02e1 D:0b08 B:bf nvMXdIzC
+09d6b7 04d6b7 pha                    A:0b00 X:0000 Y:0009 S:02e1 D:0b08 B:bf nvMXdIZC
+09d6b8 04d6b8 plb                    A:0b00 X:0000 Y:0009 S:02e0 D:0b08 B:bf nvMXdIZC
+09d6b9 04d6b9 lda $04       [000b0c] A:0b00 X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIZC
+09d6bb 04d6bb cmp $2143     [002143] A:0b5d X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIzC
+09d6be 04d6be bne $d6bb     [09d6bb] A:0b5d X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIZC
+09d6c0 04d6c0 inc                    A:0b5d X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIZC
+09d6c1 04d6c1 stx $2141     [002141] A:0b5e X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIzC SPC Write 1 <= 00
+09d6c4 04d6c4 sty $2142     [002142] A:0b5e X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIzC SPC Write 2 <= 09
+09d6c7 04d6c7 plx                    A:0b5e X:0000 Y:0009 S:02e1 D:0b08 B:00 nvMXdIzC
+09d6c8 04d6c8 stx $2140     [002140] A:0b5e X:0010 Y:0009 S:02e2 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 10
+09d6cb 04d6cb sta $2143     [002143] A:0b5e X:0010 Y:0009 S:02e2 D:0b08 B:00 nvMXdIzC SPC Write 3 <= b5e
+09d6ce 04d6ce sta $04       [000b0c] A:0b5e X:0010 Y:0009 S:02e2 D:0b08 B:00 nvMXdIzC
+09d6d0 04d6d0 pld                    A:0b5e X:0010 Y:0009 S:02e2 D:0b08 B:00 nvMXdIzC
+09d6d1 04d6d1 plb                    A:0b5e X:0010 Y:0009 S:02e4 D:1000 B:00 nvMXdIzC
+
+//Spielt den Introsong "Short Cuts" im Soundtest
+bfad5d 1fad5d beq $ad67     [bfad67] A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvmxdIZC
+bfad67 1fad67 sep #$30               A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvmxdIZC
+bfad69 1fad69 lda $13ed     [bf13ed] A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf NvMXdIZC
+bfad6c 1fad6c jsl $09d009   [09d009] A:8000 X:008b Y:0009 S:02f5 D:1000 B:bf nvMXdIZC
+09d009 04d009 jmp $d3dd     [09d3dd] A:8000 X:008b Y:0009 S:02f2 D:1000 B:bf nvMXdIZC
+09d3dd 04d3dd phb                    A:8000 X:008b Y:0009 S:02f2 D:1000 B:bf nvMXdIZC
+09d3de 04d3de phd                    A:8000 X:008b Y:0009 S:02f1 D:1000 B:bf nvMXdIZC
+09d3df 04d3df php                    A:8000 X:008b Y:0009 S:02ef D:1000 B:bf nvMXdIZC
+09d3e0 04d3e0 sep #$20               A:8000 X:008b Y:0009 S:02ee D:1000 B:bf nvMXdIZC
+09d3e2 04d3e2 tax                    A:8000 X:008b Y:0009 S:02ee D:1000 B:bf nvMXdIZC
+09d3e3 04d3e3 lda #$10               A:8000 X:0000 Y:0009 S:02ee D:1000 B:bf nvMXdIZC
+09d3e5 04d3e5 jsr $d6a6     [09d6a6] A:8010 X:0000 Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d6a6 04d6a6 php                    A:8010 X:0000 Y:0009 S:02ec D:1000 B:bf nvMXdIzC
+09d6a7 04d6a7 phb                    A:8010 X:0000 Y:0009 S:02eb D:1000 B:bf nvMXdIzC
+09d6a8 04d6a8 phd                    A:8010 X:0000 Y:0009 S:02ea D:1000 B:bf nvMXdIzC
+09d6a9 04d6a9 sep #$30               A:8010 X:0000 Y:0009 S:02e8 D:1000 B:bf nvMXdIzC
+09d6ab 04d6ab pha                    A:8010 X:0000 Y:0009 S:02e8 D:1000 B:bf nvMXdIzC
+09d6ac 04d6ac rep #$20               A:8010 X:0000 Y:0009 S:02e7 D:1000 B:bf nvMXdIzC
+09d6ae 04d6ae lda $001ffe   [001ffe] A:8010 X:0000 Y:0009 S:02e7 D:1000 B:bf nvmXdIzC
+09d6b2 04d6b2 tcd                    A:0b08 X:0000 Y:0009 S:02e7 D:1000 B:bf nvmXdIzC
+09d6b3 04d6b3 sep #$20               A:0b08 X:0000 Y:0009 S:02e7 D:0b08 B:bf nvmXdIzC
+09d6b5 04d6b5 lda #$00               A:0b08 X:0000 Y:0009 S:02e7 D:0b08 B:bf nvMXdIzC
+09d6b7 04d6b7 pha                    A:0b00 X:0000 Y:0009 S:02e7 D:0b08 B:bf nvMXdIZC
+09d6b8 04d6b8 plb                    A:0b00 X:0000 Y:0009 S:02e6 D:0b08 B:bf nvMXdIZC
+09d6b9 04d6b9 lda $04       [000b0c] A:0b00 X:0000 Y:0009 S:02e7 D:0b08 B:00 nvMXdIZC
+09d6bb 04d6bb cmp $2143     [002143] A:0b97 X:0000 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC
+09d6be 04d6be bne $d6bb     [09d6bb] A:0b97 X:0000 Y:0009 S:02e7 D:0b08 B:00 nvMXdIZC
+09d6c0 04d6c0 inc                    A:0b97 X:0000 Y:0009 S:02e7 D:0b08 B:00 nvMXdIZC
+09d6c1 04d6c1 stx $2141     [002141] A:0b98 X:0000 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC SPC Write 1 <= 00
+09d6c4 04d6c4 sty $2142     [002142] A:0b98 X:0000 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC SPC Write 2 <= 09
+09d6c7 04d6c7 plx                    A:0b98 X:0000 Y:0009 S:02e7 D:0b08 B:00 NvMXdIzC
+09d6c8 04d6c8 stx $2140     [002140] A:0b98 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 10
+09d6cb 04d6cb sta $2143     [002143] A:0b98 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC SPC Write 3 <= b98
+09d6ce 04d6ce sta $04       [000b0c] A:0b98 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC
+09d6d0 04d6d0 pld                    A:0b98 X:0010 Y:0009 S:02e8 D:0b08 B:00 nvMXdIzC
+09d6d1 04d6d1 plb                    A:0b98 X:0010 Y:0009 S:02ea D:1000 B:00 nvMXdIzC
+09d6d2 04d6d2 plp                    A:0b98 X:0010 Y:0009 S:02eb D:1000 B:bf NvMXdIzC
+09d6d3 04d6d3 rts                    A:0b98 X:0010 Y:0009 S:02ec D:1000 B:bf nvMXdIzC
+09d3e8 04d3e8 plp                    A:0b98 X:0010 Y:0009 S:02ee D:1000 B:bf nvMXdIzC
+09d3e9 04d3e9 pld                    A:0b98 X:0010 Y:0009 S:02ef D:1000 B:bf nvMXdIZC
+09d3ea 04d3ea plb                    A:0b98 X:0010 Y:0009 S:02f1 D:1000 B:bf nvMXdIzC
+09d3eb 04d3eb rtl                    A:0b98 X:0010 Y:0009 S:02f2 D:1000 B:bf NvMXdIzC
+bfad70 1fad70 rep #$30               A:0b98 X:0010 Y:0009 S:02f5 D:1000 B:bf NvMXdIzC
+bfad72 1fad72 lda $13ec     [bf13ec] A:0b98 X:0010 Y:0009 S:02f5 D:1000 B:bf NvmxdIzC
+
+
+
+//Spielt in Level 1-1 den Song
+81ba4a 00ba4a lda #$0000             A:2bbd X:008b Y:ea09 S:02fa D:0000 B:80 NvmxdIzC
+81ba4d 00ba4d ldx #$0005             A:0000 X:008b Y:ea09 S:02fa D:0000 B:80 nvmxdIZC
+81ba50 00ba50 ldy #$0004             A:0000 X:0005 Y:ea09 S:02fa D:0000 B:80 nvmxdIzC
+81ba53 00ba53 jsl $89d012   [89d012] A:0000 X:0005 Y:0004 S:02fa D:0000 B:80 nvmxdIzC
+89d012 04d012 jmp $d426     [89d426] A:0000 X:0005 Y:0004 S:02f7 D:0000 B:80 nvmxdIzC
+89d426 04d426 php                    A:0000 X:0005 Y:0004 S:02f7 D:0000 B:80 nvmxdIzC
+89d427 04d427 phb                    A:0000 X:0005 Y:0004 S:02f6 D:0000 B:80 nvmxdIzC
+89d428 04d428 phd                    A:0000 X:0005 Y:0004 S:02f5 D:0000 B:80 nvmxdIzC
+89d429 04d429 sep #$30               A:0000 X:0005 Y:0004 S:02f3 D:0000 B:80 nvmxdIzC
+89d42b 04d42b pha                    A:0000 X:0005 Y:0004 S:02f3 D:0000 B:80 nvMXdIzC
+89d42c 04d42c rep #$20               A:0000 X:0005 Y:0004 S:02f2 D:0000 B:80 nvMXdIzC
+89d42e 04d42e lda $001ffe   [001ffe] A:0000 X:0005 Y:0004 S:02f2 D:0000 B:80 nvmXdIzC
+89d432 04d432 tcd                    A:0b08 X:0005 Y:0004 S:02f2 D:0000 B:80 nvmXdIzC
+89d433 04d433 sep #$20               A:0b08 X:0005 Y:0004 S:02f2 D:0b08 B:80 nvmXdIzC
+89d435 04d435 lda #$00               A:0b08 X:0005 Y:0004 S:02f2 D:0b08 B:80 nvMXdIzC
+89d437 04d437 pha                    A:0b00 X:0005 Y:0004 S:02f2 D:0b08 B:80 nvMXdIZC
+89d438 04d438 plb                    A:0b00 X:0005 Y:0004 S:02f1 D:0b08 B:80 nvMXdIZC
+89d439 04d439 lda $04       [000b0c] A:0b00 X:0005 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d43b 04d43b cmp $2143     [002143] A:0ba8 X:0005 Y:0004 S:02f2 D:0b08 B:00 NvMXdIzC
+89d43e 04d43e bne $d43b     [89d43b] A:0ba8 X:0005 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d440 04d440 inc                    A:0ba8 X:0005 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d441 04d441 stx $2141     [002141] A:0ba9 X:0005 Y:0004 S:02f2 D:0b08 B:00 NvMXdIzC SPC Write 1 <= 05 Wird wohl auch wieder die Songnummer sein?
+89d444 04d444 sty $2142     [002142] A:0ba9 X:0005 Y:0004 S:02f2 D:0b08 B:00 NvMXdIzC SPC Write 2 <= 04 Was bedeutet es? Bei 0 gibt es weder Sound noch Musik
+89d447 04d447 ldx #$14               A:0ba9 X:0005 Y:0004 S:02f2 D:0b08 B:00 NvMXdIzC
+89d449 04d449 stx $2140     [002140] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 14
+89d44c 04d44c sta $2143     [002143] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC SPC Write 3 <= ba9
+89d44f 04d44f cmp $2143     [002143] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d44f 04d44f cmp $2143     [002143] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d44f 04d44f cmp $2143     [002143] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+..... immer das gleiche
+89d452 04d452 bne $d44f     [89d44f] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d44f 04d44f cmp $2143     [002143] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d454 04d454 inc                    A:0ba9 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d455 04d455 plx                    A:0baa X:0014 Y:0004 S:02f2 D:0b08 B:00 NvMXdIzC
+89d456 04d456 stx $2140     [002140] A:0baa X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC SPC Write 0 <= 00
+89d459 04d459 sta $2143     [002143] A:0baa X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC SPC Write 3 <= baa
+89d45c 04d45c sta $04       [000b0c] A:0baa X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC
+89d45e 04d45e pld                    A:0baa X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC
+89d45f 04d45f plb                    A:0baa X:0000 Y:0004 S:02f5 D:0000 B:00 nvMXdIZC
+89d460 04d460 plp                    A:0baa X:0000 Y:0004 S:02f6 D:0000 B:80 NvMXdIzC
+89d461 04d461 rtl                    A:0baa X:0000 Y:0004 S:02f7 D:0000 B:80 nvmxdIzC
+81ba57 00ba57 lda #$0080             A:0baa X:0000 Y:0004 S:02fa D:0000 B:80 nvmxdIzC
+81ba5a 00ba5a sta $24       [000024] A:0080 X:0000 Y:0004 S:02fa D:0000 B:80 nvmxdIzC
+81ba5c 00ba5c lda #$979d             A:0080 X:0000 Y:0004 S:02fa D:0000 B:80 nvmxdIzC
+81ba5f 00ba5f sta $22       [000022] A:979d X:0000 Y:0004 S:02fa D:0000 B:80 NvmxdIzC
+81ba61 00ba61 jsl $808e57   [808e57] A:979d X:0000 Y:0004 S:02fa D:0000 B:80 NvmxdIzC
+808e57 000e57 lda #$8f43             A:979d X:0000 Y:0004 S:02f7 D:0000 B:80 NvmxdIzC
+
+//Spielt in Level 1-2 den Song
+81bfac 00bfac lda #$0000             A:2e2d X:008b Y:ea09 S:02fa D:0000 B:80 NvmxdIzC
+81bfaf 00bfaf ldx #$0002             A:0000 X:008b Y:ea09 S:02fa D:0000 B:80 nvmxdIZC
+81bfb2 00bfb2 ldy #$0004             A:0000 X:0002 Y:ea09 S:02fa D:0000 B:80 nvmxdIzC
+81bfb5 00bfb5 jsl $89d012   [89d012] A:0000 X:0002 Y:0004 S:02fa D:0000 B:80 nvmxdIzC
+89d012 04d012 jmp $d426     [89d426] A:0000 X:0002 Y:0004 S:02f7 D:0000 B:80 nvmxdIzC
+89d426 04d426 php                    A:0000 X:0002 Y:0004 S:02f7 D:0000 B:80 nvmxdIzC
+89d427 04d427 phb                    A:0000 X:0002 Y:0004 S:02f6 D:0000 B:80 nvmxdIzC
+89d428 04d428 phd                    A:0000 X:0002 Y:0004 S:02f5 D:0000 B:80 nvmxdIzC
+89d429 04d429 sep #$30               A:0000 X:0002 Y:0004 S:02f3 D:0000 B:80 nvmxdIzC
+89d42b 04d42b pha                    A:0000 X:0002 Y:0004 S:02f3 D:0000 B:80 nvMXdIzC
+89d42c 04d42c rep #$20               A:0000 X:0002 Y:0004 S:02f2 D:0000 B:80 nvMXdIzC
+89d42e 04d42e lda $001ffe   [001ffe] A:0000 X:0002 Y:0004 S:02f2 D:0000 B:80 nvmXdIzC
+89d432 04d432 tcd                    A:0b08 X:0002 Y:0004 S:02f2 D:0000 B:80 nvmXdIzC
+89d433 04d433 sep #$20               A:0b08 X:0002 Y:0004 S:02f2 D:0b08 B:80 nvmXdIzC
+89d435 04d435 lda #$00               A:0b08 X:0002 Y:0004 S:02f2 D:0b08 B:80 nvMXdIzC
+89d437 04d437 pha                    A:0b00 X:0002 Y:0004 S:02f2 D:0b08 B:80 nvMXdIZC
+89d438 04d438 plb                    A:0b00 X:0002 Y:0004 S:02f1 D:0b08 B:80 nvMXdIZC
+89d439 04d439 lda $04       [000b0c] A:0b00 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d43b 04d43b cmp $2143     [002143] A:0b23 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d43e 04d43e bne $d43b     [89d43b] A:0b23 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d440 04d440 inc                    A:0b23 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d441 04d441 stx $2141     [002141] A:0b24 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC SPC Write 1 <= 02
+89d444 04d444 sty $2142     [002142] A:0b24 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC SPC Write 2 <= 04
+89d447 04d447 ldx #$14               A:0b24 X:0002 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d449 04d449 stx $2140     [002140] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 14
+89d44c 04d44c sta $2143     [002143] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC SPC Write 3 <= b24
+89d44f 04d44f cmp $2143     [002143] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d44f 04d44f cmp $2143     [002143] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+.....
+89d44f 04d44f cmp $2143     [002143] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d454 04d454 inc                    A:0b24 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIZC
+89d455 04d455 plx                    A:0b25 X:0014 Y:0004 S:02f2 D:0b08 B:00 nvMXdIzC
+89d456 04d456 stx $2140     [002140] A:0b25 X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC SPC Write 0 <= 00
+89d459 04d459 sta $2143     [002143] A:0b25 X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC SPC Write 3 <= b25
+89d45c 04d45c sta $04       [000b0c] A:0b25 X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC
+89d45e 04d45e pld                    A:0b25 X:0000 Y:0004 S:02f3 D:0b08 B:00 nvMXdIZC
+89d45f 04d45f plb                    A:0b25 X:0000 Y:0004 S:02f5 D:0000 B:00 nvMXdIZC
+89d460 04d460 plp                    A:0b25 X:0000 Y:0004 S:02f6 D:0000 B:80 NvMXdIzC
+89d461 04d461 rtl                    A:0b25 X:0000 Y:0004 S:02f7 D:0000 B:80 nvmxdIzC
+81bfb9 00bfb9 lda #$0080             A:0b25 X:0000 Y:0004 S:02fa D:0000 B:80 nvmxdIzC
+
+
+
+//Kurz vor dem laden der Buggy Musik, wird das hier immer wieder wiederholt. Fade Out?
+89d6be 04d6be bne $d6bb     [89d6bb] A:0bd4 X:008a Y:0000 S:02d6 D:0b08 B:00 nvMXdIZC
+89d6c0 04d6c0 inc                    A:0bd4 X:008a Y:0000 S:02d6 D:0b08 B:00 nvMXdIZC
+89d6c1 04d6c1 stx $2141     [002141] A:0bd5 X:008a Y:0000 S:02d6 D:0b08 B:00 NvMXdIzC SPC Write 1 <= 8a
+89d6c4 04d6c4 sty $2142     [002142] A:0bd5 X:008a Y:0000 S:02d6 D:0b08 B:00 NvMXdIzC SPC Write 2 <= 00
+89d6c7 04d6c7 plx                    A:0bd5 X:008a Y:0000 S:02d6 D:0b08 B:00 NvMXdIzC
+89d6c8 04d6c8 stx $2140     [002140] A:0bd5 X:0020 Y:0000 S:02d7 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 20
+89d6cb 04d6cb sta $2143     [002143] A:0bd5 X:0020 Y:0000 S:02d7 D:0b08 B:00 nvMXdIzC SPC Write 3 <= bd5
+89d6ce 04d6ce sta $04       [000b0c] A:0bd5 X:0020 Y:0000 S:02d7 D:0b08 B:00 nvMXdIzC
+89d6d0 04d6d0 pld                    A:0bd5 X:0020 Y:0000 S:02d7 D:0b08 B:00 nvMXdIzC
+89d6d1 04d6d1 plb                    A:0bd5 X:0020 Y:0000 S:02d9 D:0b08 B:00 nvMXdIzC
+89d6d2 04d6d2 plp                    A:0bd5 X:0020 Y:0000 S:02da D:0b08 B:80 NvMXdIzC
+
+//Dann irgendwann das hier
+82976a 01176a lda #$0000             A:ffd8 X:0014 Y:000e S:02e3 D:0000 B:82 NvmxdIzc
+82976d 01176d ldx #$0002             A:0000 X:0014 Y:000e S:02e3 D:0000 B:82 nvmxdIZc
+829770 011770 ldy #$fff6             A:0000 X:0002 Y:000e S:02e3 D:0000 B:82 nvmxdIzc
+829773 011773 jsl $89d012   [89d012] A:0000 X:0002 Y:fff6 S:02e3 D:0000 B:82 NvmxdIzc
+....
+89d43e 04d43e bne $d43b     [89d43b] A:0be2 X:0002 Y:00f6 S:02db D:0b08 B:00 nvMXdIZC
+89d440 04d440 inc                    A:0be2 X:0002 Y:00f6 S:02db D:0b08 B:00 nvMXdIZC
+89d441 04d441 stx $2141     [002141] A:0be3 X:0002 Y:00f6 S:02db D:0b08 B:00 NvMXdIzC SPC Write 1 <= 02
+89d444 04d444 sty $2142     [002142] A:0be3 X:0002 Y:00f6 S:02db D:0b08 B:00 NvMXdIzC SPC Write 2 <= f6
+89d447 04d447 ldx #$14               A:0be3 X:0002 Y:00f6 S:02db D:0b08 B:00 NvMXdIzC
+89d449 04d449 stx $2140     [002140] A:0be3 X:0014 Y:00f6 S:02db D:0b08 B:00 nvMXdIzC SPC Write 0 <= 14
+89d44c 04d44c sta $2143     [002143] A:0be3 X:0014 Y:00f6 S:02db D:0b08 B:00 nvMXdIzC SPC Write 3 <= be3
+89d44f 04d44f cmp $2143     [002143] A:0be3 X:0014 Y:00f6 S:02db D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0be3 X:0014 Y:00f6 S:02db D:0b08 B:00 nvMXdIzC
+89d44f 04d44f cmp $2143     [002143] A:0be3 X:0014 Y:00f6 S:02db D:0b08 B:00 nvMXdIzC
+
+
+//Dann das hier
+89d456 04d456 stx $2140     [002140] A:0be4 X:0000 Y:00f6 S:02dc D:0b08 B:00 nvMXdIZC SPC Write 0 <= 00
+89d459 04d459 sta $2143     [002143] A:0be4 X:0000 Y:00f6 S:02dc D:0b08 B:00 nvMXdIZC SPC Write 3 <= be4
+89d45c 04d45c sta $04       [000b0c] A:0be4 X:0000 Y:00f6 S:02dc D:0b08 B:00 nvMXdIZC
+89d45e 04d45e pld                    A:0be4 X:0000 Y:00f6 S:02dc D:0b08 B:00 nvMXdIZC
+
+
+//Dann ganz oft das hier
+89d47c 04d47c ldx #$18               A:00e8 X:0000 Y:0030 S:02da D:0b08 B:00 NvMXdIzC
+89d47e 04d47e stx $2140     [002140] A:00e8 X:0018 Y:0030 S:02da D:0b08 B:00 nvMXdIzC SPC Write 0 <= 18
+89d481 04d481 sta $2143     [002143] A:00e8 X:0018 Y:0030 S:02da D:0b08 B:00 nvMXdIzC SPC Write 3 <= e8
+89d484 04d484 cmp $2143     [002143] A:00e8 X:0018 Y:0030 S:02da D:0b08 B:00 nvMXdIzC
+89d487 04d487 bne $d484     [89d484] A:00e8 X:0018 Y:0030 S:02da D:0b08 B:00 nvMXdIzC
+
+//Dann das einmal 
+89d6c0 04d6c0 inc                    A:0bf7 X:0000 Y:0030 S:02d3 D:0b08 B:00 nvMXdIZC
+89d6c1 04d6c1 stx $2141     [002141] A:0bf8 X:0000 Y:0030 S:02d3 D:0b08 B:00 NvMXdIzC SPC Write 1 <= 00
+89d6c4 04d6c4 sty $2142     [002142] A:0bf8 X:0000 Y:0030 S:02d3 D:0b08 B:00 NvMXdIzC SPC Write 2 <= 30
+89d6c7 04d6c7 plx                    A:0bf8 X:0000 Y:0030 S:02d3 D:0b08 B:00 NvMXdIzC
+89d6c8 04d6c8 stx $2140     [002140] A:0bf8 X:0022 Y:0030 S:02d4 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 22
+89d6cb 04d6cb sta $2143     [002143] A:0bf8 X:0022 Y:0030 S:02d4 D:0b08 B:00 nvMXdIzC SPC Write 3 <= bf8
+89d6ce 04d6ce sta $04       [000b0c] A:0bf8 X:0022 Y:0030 S:02d4 D:0b08 B:00 nvMXdIzC
+
+
+//Und das einmal. 
+
+82979f 01179f lda #$0001             A:0b00 X:0022 Y:0030 S:02e1 D:0000 B:82 NvmxdIzC
+8297a2 0117a2 ldx #$0002             A:0001 X:0022 Y:0030 S:02e1 D:0000 B:82 nvmxdIzC
+8297a5 0117a5 ldy #$000a             A:0001 X:0002 Y:0030 S:02e1 D:0000 B:82 nvmxdIzC
+8297a8 0117a8 jsl $89d012   [89d012] A:0001 X:0002 Y:000a S:02e1 D:0000 B:82 nvmxdIzC
+89d012 04d012 jmp $d426     [89d426] A:0001 X:0002 Y:000a S:02de D:0000 B:82 nvmxdIzC
+89d426 04d426 php                    A:0001 X:0002 Y:000a S:02de D:0000 B:82 nvmxdIzC
+89d427 04d427 phb                    A:0001 X:0002 Y:000a S:02dd D:0000 B:82 nvmxdIzC
+89d428 04d428 phd                    A:0001 X:0002 Y:000a S:02dc D:0000 B:82 nvmxdIzC
+89d429 04d429 sep #$30               A:0001 X:0002 Y:000a S:02da D:0000 B:82 nvmxdIzC
+89d42b 04d42b pha                    A:0001 X:0002 Y:000a S:02da D:0000 B:82 nvMXdIzC
+89d42c 04d42c rep #$20               A:0001 X:0002 Y:000a S:02d9 D:0000 B:82 nvMXdIzC
+89d42e 04d42e lda $001ffe   [001ffe] A:0001 X:0002 Y:000a S:02d9 D:0000 B:82 nvmXdIzC
+89d432 04d432 tcd                    A:0b08 X:0002 Y:000a S:02d9 D:0000 B:82 nvmXdIzC
+89d433 04d433 sep #$20               A:0b08 X:0002 Y:000a S:02d9 D:0b08 B:82 nvmXdIzC
+89d435 04d435 lda #$00               A:0b08 X:0002 Y:000a S:02d9 D:0b08 B:82 nvMXdIzC
+89d437 04d437 pha                    A:0b00 X:0002 Y:000a S:02d9 D:0b08 B:82 nvMXdIZC
+89d438 04d438 plb                    A:0b00 X:0002 Y:000a S:02d8 D:0b08 B:82 nvMXdIZC
+89d439 04d439 lda $04       [000b0c] A:0b00 X:0002 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+89d43b 04d43b cmp $2143     [002143] A:0bf8 X:0002 Y:000a S:02d9 D:0b08 B:00 NvMXdIzC
+89d43e 04d43e bne $d43b     [89d43b] A:0bf8 X:0002 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+89d440 04d440 inc                    A:0bf8 X:0002 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+89d441 04d441 stx $2141     [002141] A:0bf9 X:0002 Y:000a S:02d9 D:0b08 B:00 NvMXdIzC SPC Write 1 <= 02
+89d444 04d444 sty $2142     [002142] A:0bf9 X:0002 Y:000a S:02d9 D:0b08 B:00 NvMXdIzC SPC Write 2 <= 0a
+89d447 04d447 ldx #$14               A:0bf9 X:0002 Y:000a S:02d9 D:0b08 B:00 NvMXdIzC
+89d449 04d449 stx $2140     [002140] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIzC SPC Write 0 <= 14
+89d44c 04d44c sta $2143     [002143] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIzC SPC Write 3 <= bf9
+89d44f 04d44f cmp $2143     [002143] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIzC
+
+//Und das hier sofort hinterher
+
+89d44f 04d44f cmp $2143     [002143] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIzC
+89d452 04d452 bne $d44f     [89d44f] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+89d454 04d454 inc                    A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+89d455 04d455 plx                    A:0bfa X:0014 Y:000a S:02d9 D:0b08 B:00 NvMXdIzC
+89d456 04d456 stx $2140     [002140] A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC SPC Write 0 <= 01 >>>>> Das ist der Song?!?!
+89d459 04d459 sta $2143     [002143] A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC SPC Write 3 <= bfa
+89d45c 04d45c sta $04       [000b0c] A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC
+89d45e 04d45e pld                    A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC
+89d45f 04d45f plb                    A:0bfa X:0001 Y:000a S:02dc D:0000 B:00 nvMXdIZC
+89d460 04d460 plp                    A:0bfa X:0001 Y:000a S:02dd D:0000 B:82 NvMXdIzC
+89d461 04d461 rtl                    A:0bfa X:0001 Y:000a S:02de D:0000 B:82 nvmxdIzC
+
+
+Fakt: Wenn ich folgendes ersetze, wird die Buggy Music sofort am Anfang gespielt!
+
+81ba4a 00ba4a lda #$0000             A:2bbd X:008b Y:ea09 S:02fa D:0000 B:80 NvmxdIzC
+81ba4d 00ba4d ldx #$0005             A:0000 X:008b Y:ea09 S:02fa D:0000 B:80 nvmxdIZC
+81ba50 00ba50 ldy #$0004             A:0000 X:0005 Y:ea09 S:02fa D:0000 B:80 nvmxdIzC
+seek($81ba4a)
+	lda #$0001
+	ldx #$0002
+	ldy #$000a
+
+
+>>> Tatsache ist aber, dass das hier ausreicht. Also war etwas oben verkehrt: X oder Y sind nicht der Song, sondern A <<<<
+seek($81ba4a)
+	lda #$0001
+
+	
+Durch entfernen der eingerückten Zeilen, kann das Spielen der Musik im Level 1-1 unterbunden werden.
+//89d44f 04d44f cmp $2143     [002143] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIzC
+//89d452 04d452 bne $d44f     [89d44f] A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+	//89d454 04d454 inc                    A:0bf9 X:0014 Y:000a S:02d9 D:0b08 B:00 nvMXdIZC
+//89d455 04d455 plx                    A:0bfa X:0014 Y:000a S:02d9 D:0b08 B:00 NvMXdIzC
+	//89d456 04d456 stx $2140     [002140] A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC SPC Write 0 <= 01 >>>>> Das ist der Song?!?!
+	//89d459 04d459 sta $2143     [002143] A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC SPC Write 3 <= bfa
+//89d45c 04d45c sta $04       [000b0c] A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC
+//89d45e 04d45e pld                    A:0bfa X:0001 Y:000a S:02da D:0b08 B:00 nvMXdIzC
+//89d45f 04d45f plb                    A:0bfa X:0001 Y:000a S:02dc D:0000 B:00 nvMXdIZC
+//89d460 04d460 plp                    A:0bfa X:0001 Y:000a S:02dd D:0000 B:82 NvMXdIzC
+//89d461 04d461 rtl                    A:0bfa X:0001 Y:000a S:02de D:0000 B:82 nvmxdIzC
+
+
+//Leider stürzt er dann bei folgenden Zeilen ab
+89d6e9 04d6e9 pha                    A:0b00 X:0001 Y:0b18 S:02dd D:0b08 B:81 nvMxdIZc
+89d6ea 04d6ea plb                    A:0b00 X:0001 Y:0b18 S:02dc D:0b08 B:81 nvMxdIZc
+89d6eb 04d6eb lda $04       [000b0c] A:0b00 X:0001 Y:0b18 S:02dd D:0b08 B:00 nvMxdIZc
+89d6ed 04d6ed cmp $2143     [002143] A:0b6a X:0001 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzc
+89d6f0 04d6f0 bne $d6ed     [89d6ed] A:0b6a X:0001 Y:0b18 S:02dd D:0b08 B:00 nvMxdIZC
+89d6f2 04d6f2 inc                    A:0b6a X:0001 Y:0b18 S:02dd D:0b08 B:00 nvMxdIZC
+89d6f3 04d6f3 ldx $06       [000b0e] A:0b6b X:0001 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d6f5 04d6f5 stx $2141     [002141] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 NvMxdIzC SPC Write 1 <= b0
+                                                                                      SPC Write 2 <= e0
+89d6f8 04d6f8 pha                    A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 NvMxdIzC
+89d6f9 04d6f9 lda $05       [000b0d] A:0b6b X:e0b0 Y:0b18 S:02dc D:0b08 B:00 NvMxdIzC
+89d6fb 04d6fb sta $2140     [002140] A:0b0a X:e0b0 Y:0b18 S:02dc D:0b08 B:00 nvMxdIzC SPC Write 0 <= b0a
+89d6fe 04d6fe pla                    A:0b0a X:e0b0 Y:0b18 S:02dc D:0b08 B:00 nvMxdIzC
+89d6ff 04d6ff sta $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC SPC Write 3 <= b6b
+89d702 04d702 cmp $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d705 04d705 bne $d702     [89d702] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d702 04d702 cmp $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d705 04d705 bne $d702     [89d702] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d702 04d702 cmp $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d705 04d705 bne $d702     [89d702] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d702 04d702 cmp $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d705 04d705 bne $d702     [89d702] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d702 04d702 cmp $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d705 04d705 bne $d702     [89d702] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d702 04d702 cmp $2143     [002143] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d705 04d705 bne $d702     [89d702] A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIZC
+89d707 04d707 inc                    A:0b6b X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIZC
+89d708 04d708 tax                    A:0b6c X:e0b0 Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d709 04d709 pla                    A:0b6c X:0b6c Y:0b18 S:02dd D:0b08 B:00 nvMxdIzC
+89d70a 04d70a sta $2140     [002140] A:0b01 X:0b6c Y:0b18 S:02de D:0b08 B:00 nvMxdIzC SPC Write 0 <= b01
+89d70d 04d70d txa                    A:0b01 X:0b6c Y:0b18 S:02de D:0b08 B:00 nvMxdIzC
+89d70e 04d70e ldx $08       [000b10] A:0b6c X:0b6c Y:0b18 S:02de D:0b08 B:00 nvMxdIzC
+89d710 04d710 stx $2141     [002141] A:0b6c X:0008 Y:0b18 S:02de D:0b08 B:00 nvMxdIzC SPC Write 1 <= 08
+                                                                                      SPC Write 2 <= 00
+89d713 04d713 sta $2143     [002143] A:0b6c X:0008 Y:0b18 S:02de D:0b08 B:00 nvMxdIzC SPC Write 3 <= b6c
+89d716 04d716 cmp $2143     [002143] A:0b6c X:0008 Y:0b18 S:02de D:0b08 B:00 nvMxdIzC
+89d719 04d719 bne $d716     [89d716] A:0b6c X:0008 Y:0b18 S:02de D:0b08 B:00 nvMxdIzC
+89d716 04d716 cmp $2143     [002143] A:0b6c X:0008 Y:0b18 S:02de D:0b08 B:00 nvMxdIzC
+89d719 04d719 bne $d716     [89d716] A:0b6c X:0008 Y:0b18 S:02de D:0b08 B:00 nvMxdIzC
+
+//Spielen eines Lande-Soundeffekts
+
+SPC Write 1 <=   e6
+SPC Write 2 <=   e2
+SPC Write 0 <= b 0a
+SPC Write 3 <= b 69
+
+SPC Write 0 <= b 01
+SPC Write 1 <=   08
+SPC Write 2 <=   00
+SPC Write 3 <= b 6a
+
+SPC Write 0 <= b 90
+SPC Write 1 <= b f2
+SPC Write 2 <= b 03
+SPC Write 3 <= b 6b
+
+SPC Write 0 <= b 00
+SPC Write 1 <= b 00
+SPC Write 2 <= b 00
+SPC Write 3 <= b 6c
+
+SPC Write 0 <= b 19
+SPC Write 1 <= b 40
+SPC Write 3 <= b 6d
+
+//Write 3 ist immer eine steigende Zahl zum syncen!!
+
+//Schleifender Gegner
+SPC Write 1 <=   e6 Paket ist identisch zum Lande-Soundeffekt
+SPC Write 2 <=   e2
+SPC Write 0 <= b 0a
+SPC Write 3 <= b 28
+
+SPC Write 0 <= b 01 Paket ist identisch zum Lande-Soundeffekt
+SPC Write 1 <=   08
+SPC Write 2 <=   00
+SPC Write 3 <= b 29
+
+SPC Write 0 <= b b0
+SPC Write 1 <= b f5
+SPC Write 2 <= b 0a
+SPC Write 3 <= b 2a
+
+SPC Write 0 <= b 00 Paket ist identisch zum Lande-Soundeffekt
+SPC Write 1 <= b 00
+SPC Write 2 <= b 00
+SPC Write 3 <= b 2b
+
+SPC Write 0 <= b 07
+SPC Write 1 <= b 3e
+SPC Write 3 <= b 2c
+
+
+//Nur einmal Schießen mit SpreadShot
+SPC Write 1 <=   e6
+SPC Write 2 <=   e2
+SPC Write 0 <= b 0a
+SPC Write 3 <= b 5e
+
+SPC Write 0 <= b 01
+SPC Write 1 <=   08
+SPC Write 2 <=   00
+SPC Write 3 <= b 5f
+
+SPC Write 0 <= b 84
+SPC Write 1 <= b f4
+SPC Write 2 <= b 0c
+SPC Write 3 <= b 60
+
+SPC Write 0 <= b 00
+SPC Write 1 <= b 00
+SPC Write 2 <= b 00
+SPC Write 3 <= b 61
+
+SPC Write 0 <= b 3f
+SPC Write 1 <= b 40
+SPC Write 3 <= b 62
+
+
+SPC Write 1 <=   e6
+SPC Write 2 <=   e2
+SPC Write 0 <= b 0a
+SPC Write 3 <= b 63
+
+SPC Write 0 <= b 01
+SPC Write 1 <=   08
+SPC Write 2 <=   00
+SPC Write 3 <= b 64
+
+SPC Write 0 <= b 90
+SPC Write 1 <= b f2
+SPC Write 2 <= b 03
+SPC Write 3 <= b 65
+
+SPC Write 0 <= b 00
+SPC Write 1 <= b 00
+SPC Write 2 <= b 00
+SPC Write 3 <= b 66
+
+SPC Write 0 <= b 19
+SPC Write 1 <= b 3f
+SPC Write 3 <= b 67
+
+SPC Write 1 <=   e6
+SPC Write 2 <=   e2
+SPC Write 0 <= b 0a
+SPC Write 3 <= b 68
+
+SPC Write 0 <= b 01
+SPC Write 1 <=   08
+SPC Write 2 <=   00
+SPC Write 3 <= b 69
+
+SPC Write 0 <= b 90
+SPC Write 1 <= b f2
+SPC Write 2 <= b 03
+SPC Write 3 <= b 6a
+
+SPC Write 0 <= b 00
+SPC Write 1 <= b 00
+SPC Write 2 <= b 00
+SPC Write 3 <= b 6b
+
+SPC Write 0 <= b 19
+SPC Write 1 <= b 57
+SPC Write 3 <= b 6c
+
+
+//Songs in der TSA
+Introsong vorhanden
+Final Frontier vorhanden für CutScenes
+Der Endesong kann extrahiert werden
+
+Wüste vorhanden in Desert Storm
+Buggy Panic als eigener Song
+Stadt vorhanden in Desert Storm ab Mitte
+Power Tower vorhanden in Desert Storm am Ende
+Gas fehlt *******************************
+WurmBoss / I, Robot in Buggy Panic ab Mitte
+
+
+Space Level in Space Chaos
+Space Roboter in Space Chaos ab Mitte
+Space Abgasboss in Space Chaos ab Ende
+Motorrad Hin in Born to be Wild
+Braindead Level in Braindead
+Braindead Boss in Braindead
+Motorrad Zurück in Even Wilder
+Raketen in Buggy Panic am Ende
+Arachno als eigener Song
+
+Pirate Station als eigener Song
+Submerged als eigener Song
+Minesweeper fehlt *****************************
+Psycho Spin fehlt ***************************
+Manta Ray fehlt *****************************
+
+Face the Sunset Level vorhanden
+Face the Sunset Boss vorhanden
+Gallery vorhanden
+Tiny Machine fehlt? ****************************
+
+Final Boss vorhanden
+
+Farewell vorhanden
+
+
